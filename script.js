@@ -49,7 +49,7 @@ async function getSongs(folder) {
         const listItem = document.createElement("li");
         listItem.classList.add("playimg");
         listItem.innerHTML = `
-            <img class="invert music" src="music.svg" alt="">
+            <img class="invert music" src="SVGs/music.svg" alt="">
             <div class="info infoname">
                 
              <div class="songname" >${song.replaceAll("%20", " ")}</div>
@@ -83,7 +83,7 @@ const playMusic = (track, pause = false) => {
 
     if (!pause) {
         currentSong.play();
-        play.src = "pause.svg";
+        play.src = "SVGs/pause.svg";
 
         const currentSongElement = Array.from(document.querySelectorAll(".songname")).find(
             element => element.textContent.trim() === track
@@ -136,10 +136,10 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play();
-            play.src = "pause.svg";
+            play.src = "SVGs/pause.svg";
         } else {
             currentSong.pause();
-            play.src = "play.svg";
+            play.src = "SVGs/play.svg";
         }
     });
 

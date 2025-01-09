@@ -18,7 +18,15 @@ body{
     height: 100%;
 }
 
+.se{
+    padding: 5px;
+    width: 60px;
+    
+}
+.textSerch{
 
+    width: 80px;
+}
 .logo .img{
     height: 60px;
 }
@@ -54,6 +62,20 @@ body{
     background-color: rgb(18, 18, 18);
 }
 
+
+.searchBox{
+    display: flex;
+    padding:  5px;
+    background: rgb(76, 76, 76);
+    border-radius: 30px;
+    width: 40vw;
+    height: 4vh;
+    font-size: 31px;
+}
+
+
+
+
 .library{
     background-color: rgb(18, 18, 18);
     border-radius: 10px;
@@ -77,9 +99,10 @@ body{
 
 .library{
    
-    min-height: 80vh;
+    min-height: 82vh;
     position: absolute;
 }
+
 
 .footer{
     display: flex;
@@ -145,6 +168,7 @@ body{
     position: relative;
     overflow-y: scroll;
     border-radius: 10px;
+    
 }
 .card > *{
     padding-top: 1px;   
@@ -361,6 +385,7 @@ transition: all 0.5s ease-out;
     top: 25px;
     right: 25px;
     padding: 15px;
+    opacity: 0;
 }
 
 .text-spotofy-playlist{
@@ -375,13 +400,8 @@ transition: all 0.5s ease-out;
     gap: 12px;
     position: fixed; 
     bottom: 100px;    
-      
-}
-
-.range{
     
 }
-
 
 
 @media( max-width: 1400px){
@@ -391,7 +411,7 @@ transition: all 0.5s ease-out;
         left: -110%;
         transition: all .3s;
         z-index: 1;
-        width:370px;
+        width:350px;
     }
     .header{
         .header {
@@ -400,7 +420,7 @@ transition: all 0.5s ease-out;
         
     }
     .rigth{
-        width: 100vw;   
+        width: 95%;   
     }
     .playbar{
         width: 88vw;
@@ -419,7 +439,7 @@ transition: all 0.5s ease-out;
         width: 90vw;
     }
     .cardContainer{
-        margin: 0%;
+        margin-bottom: 18vh;
         justify-content: center;
     }
     .spotify-playists .card {
@@ -452,14 +472,25 @@ transition: all 0.5s ease-out;
     height: 60vh;
    }
     .songlist ul li{
-        width: 309px;
+        width: 275px;
         gap: 10px;
     }
     .library{
-        width: 392px;
+        width: 356px;
     }
     .home{
-        width: 392px;
+        width: 336px;
+    }
+    .close{
+        opacity: 1;
+    }
+
+    .searchBox{
+        font-size: 20px;
+    }
+    .search{
+        margin-top: 5px;
+        margin-left: -50px;
     }
 }
 

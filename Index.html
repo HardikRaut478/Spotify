@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
-    <link rel="stylesheet" href="Artist/Artist.css" />
     <title>Soptify - Web player: Music for everyone</title>
   </head>
   <body>
@@ -14,32 +13,32 @@
       <div class="left bg-black">
         <div class="home p-1">
           <div class="logo">
-            <img class="invert img" src="logo.svg" alt="logo" />
+            <img class="invert img" src="SVGs/logo.svg" alt="logo" />
           </div>
 
           <div class="close invert">
-            <img src="closeicon.svg" alt="" />
+            <img src="SVGs/closeicon.svg" alt="" />
           </div>
 
           <ul>
             <li>
-              <img class="invert" src="home.svg" alt="home" />Home
+              <img class="invert" src="SVGs/home.svg" alt="home" />Home
               <col />
             </li>
-            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+            <li><img class="invert" src="SVGs/search.svg" alt="search" />Search</li>
             <li></li>
           </ul>
         </div>
 
         <div class="library">
           <div class="heading">
-            <img class="invert" src="playlist.svg" alt="" />
+            <img class="invert" src="SVGs/playlist.svg" alt="" />
             <h2>Your Library</h2>
           </div>
           <div class="songlist">
             <ul>
               <li class="playimg">
-                <img class="music" src="music.svg " alt="" />
+                <img class="music" src="SVGs/music.svg" alt="" />
 
                 <!-- <div class="info">
                   <div class="infoname">song Name</div>
@@ -104,14 +103,22 @@
 
       <div class="rigth rounded p-1">
         <div class="header">
-          <img class="invert hamburger" src="hamburger.svg" alt="" />
+          <img class="invert hamburger" src="SVGs/hamburger.svg" alt="" />
 
           <div class="nav">
             <div class="hamburgerContainer">
-              <img class="invert" src="backicon.svg" alt="" />
-              <img class="invert" src="nexticon.svg" alt="" />
+              <img class="invert" src="SVGs/backicon.svg" alt="" />
+              <img class="invert" src="SVGs/nexticon.svg" alt="" />
             </div>
           </div>
+
+          <div class="search">
+            <div class="searchBox ">
+              <img class="se invert" src="SVGs/search.svg" alt="">
+                Search
+            </div>
+          </div>
+
           <div class="button">
             <button class="signupbtn">Sign up</button>
             <button class="loginbtn">Log in</button>
@@ -367,11 +374,13 @@
           <!-- ======================================= -->
 
           <!-- ============================================================================================== -->
+          
+            <div class="volume bo invert">
+              <img src="SVGs/volume.svg" alt="" />
+              <div class="range"><input type="range" name="volume" id="" /></div>
+            </div>
 
-          <div class="volume invert">
-            <img src="volume.svg" alt="" />
-            <div class="range"><input type="range" name="volume" id="" /></div>
-          </div>
+          
 
           <div class="playbar invert">
             <div class="abovebar">
@@ -383,13 +392,13 @@
                 <img
                   id="previous"
                   class="btn cursor"
-                  src="pervious.svg"
+                  src="SVGs/pervious.svg"
                   alt=""
                 />
 
-                <img id="play" class="btn cursor" src="play.svg" alt="" />
+                <img id="play" class="btn cursor" src="SVGs/play.svg" alt="" />
 
-                <img id="next" class="btn cursor" src="next.svg" alt="" />
+                <img id="next" class="btn cursor" src="SVGs/next.svg" alt="" />
               </div>
             </div>
           </div>
@@ -407,6 +416,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="Artist/Artist.js"></script>
   </body>
 </html>
